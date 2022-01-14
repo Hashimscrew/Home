@@ -1,0 +1,31 @@
+p{
+    color:salmon;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width:10em;
+    animation: text 2s steps(60, end);
+}
+
+@keyframes text {
+    from{width: 0;}
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: salmon;
+    animation: fill 4s steps(5, start) forwards;
+}
+
+@keyframes fill {
+from{
+       border-radius: 0;
+    }
+    to{
+        border-radius: 50%;
+    }
+}
